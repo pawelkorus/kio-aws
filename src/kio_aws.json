@@ -1,0 +1,24 @@
+{
+    "KDE-KIO-Protocols" : {
+        "s3aws": {
+            "Class": ":internet",
+            "X-DocPath": "kioslave5/kio_hello.html",
+            "exec": "kf5/kio/kioaws",
+            "input": "none",
+            "output": "filesystem",
+            "protocol": "s3aws",
+            "reading": true,
+            "listing": [
+                "Name",
+                "Type",
+                "Size",
+                "Date",
+                "AccessDate",
+                "Access",
+                "Owner",
+                "Group",
+                "Link"
+            ]
+        }
+    }
+}
