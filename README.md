@@ -1,11 +1,11 @@
-= KIO AWS =
+# KIO AWS
 
-== Links ==
+## Links
 
 [KIO GDrive](https://github.com/KDE/kio-gdrive)
 [Debugging kioslave](https://community.kde.org/Guidelines_and_HOWTOs/Debugging/Debugging_IOSlaves)
 
-== Developing ==
+## Developing
 
 Build docker image:
 ```
@@ -21,9 +21,9 @@ Then you can use qtcreator and other tools.
 
 Sources are mounted to `/home/user/project`
 
-== Tips & Trics ==
+## Tips
 
 Check which *.so libraries are loaded with `kioclient5`:
 ```
-strace kioclient5 ls s3aws://pawelkorus-testbucketccc 2>&1 | grep --color openat
+strace kioclient5 ls s3aws://<your-domain> 2>&1 | grep --color openat
 ```
