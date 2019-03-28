@@ -1,5 +1,7 @@
 # KIO AWS
 
+KIO slave for AWS S3 buckets
+
 ## Links
 
 [KIO GDrive](https://github.com/KDE/kio-gdrive)
