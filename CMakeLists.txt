@@ -10,10 +10,6 @@ find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS
 
 find_package(ECM ${KF5_MIN_VERSION} REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${ECM_MODULE_PATH})
-#set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules" ${ECM_MODULE_PATH})
-#set_package_properties(ECM PROPERTIES TYPE REQUIRED DESCRIPTION "Extra CMake Modules." URL "https://projects.kde.org/projects/kdesupport/extra-cmake-modules")
-
-set(KDE_INSTALL_USE_QT_SYS_PATHS, TRUE)
 
 # Locate the AWS SDK for C++ package.
 # Requires that you build with:
@@ -32,5 +28,10 @@ include(ECMSetupVersion)
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     KIO
 )
+
+add_custom_target(useful_files DEPENDS ALL
+    SOURCES
+        Dockerfile
+        README.md)
 
 add_subdirectory(src)

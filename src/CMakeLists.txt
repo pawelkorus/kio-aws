@@ -1,18 +1,18 @@
 include_directories(${CMAKE_SOURCE_DIR})
 include_directories(${CMAKE_BINARY_DIR})
 
-set(kio_aws_HEADER_FILES
+set(kio_aws_HEADERS
     kio_aws.h
     utils.h
 )
 
-set(kio_aws_SRCS
+set(kio_aws_SOURCES
     kio_aws.cpp
-    ${kio_aws_HEADER_FILES}
+    ${kio_aws_HEADERS}
 )
 
 kcoreaddons_add_plugin(kio_aws
-    SOURCES ${kio_aws_SRCS}
+    SOURCES ${kio_aws_SOURCES}
     INSTALL_NAMESPACE kf5/kio)
 
 target_link_libraries(kio_aws
