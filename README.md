@@ -1,9 +1,11 @@
 # KIO AWS
 
+KIO slave for AWS S3 buckets
+
 ## Links
 
-[KIO GDrive](https://github.com/KDE/kio-gdrive)
-[Debugging kioslave](https://community.kde.org/Guidelines_and_HOWTOs/Debugging/Debugging_IOSlaves)
+* [KIO GDrive](https://github.com/KDE/kio-gdrive)
+* [Debugging kioslave](https://community.kde.org/Guidelines_and_HOWTOs/Debugging/Debugging_IOSlaves)
 
 ## Developing
 
