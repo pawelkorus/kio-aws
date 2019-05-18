@@ -16,10 +16,13 @@ Run docker container
 ```
 docker run -it --rm -e DISPLAY=$DISPLAY -e QT_XCB_GL_INTEGRATION=none -v /tmp/.X11-unix:/tmp/.X11-unix -v $PWD:/home/user/project --cap-add=SYS_PTRACE --security-opt seccomp=unconfined pawelkorus/kio-aws bash
 ```
-
-Then you can use qtcreator and other tools.
-
 Sources are mounted to `/home/user/project`
+
+Image comes with preinstalled qtcreator IDE. You can run it using following command:
+```
+qtcreator -settingspath /home/user/project
+```
+This way qtcreator settings are persisted in mounted volume and you don't have to reconfigure it each time you run container.
 
 ## Tips
 
