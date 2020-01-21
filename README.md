@@ -9,6 +9,12 @@ KIO slave for AWS S3 buckets
 
 ## Developing
 
+Build dependency:
+
+```
+docker build -t pawelkorus/cpp-dev https://github.com/pawelkorus/dockerfiles.git#master:cpp-dev
+```
+
 Build docker image:
 ```
 docker build . -t pawelkorus/kio-aws
